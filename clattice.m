@@ -1,4 +1,4 @@
-function clattice=clattice(resolution,numx,numy,radius,spacing,offset) % Generates a lattice of circles to be used as a scene.
+function clattice=clattice(resolution,numx,numy,radius,spacing,offset) % Generates a 2D lattice of circles to be used as a scene.
 n=(1:resolution)∗2∗pi/resolution; % resolution= # of segments forming each circle.
 x = radius∗cos(n)+offset(1);  % offset(1,2)= (x,y) coordinates.
 y = radius∗sin(n)+offset(2);  % numx, numy = lattice size.

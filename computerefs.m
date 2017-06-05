@@ -1,7 +1,7 @@
 % computerefs.m updates the raymatrix according to the layout of the scene.
 % Additional data such as objgrad and v2n are passed through to save
 % computation. bounds is required to prevent rays going to infinity when
-% leaving the scene.
+% leaving the scene. Currently works in 2D.
 function raymat=computerefs(raymat,objset,objgrad,objyint,v2n,bounds) 
 for k = 1:size(raymat,3)−1
   hitmat=zeros(size(raymat,1),size(objset,1)); % Will contain x−coordinate of every possible intersection. %// Determine which rays hit which objects
